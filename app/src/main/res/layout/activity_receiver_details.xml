@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Receiver Full Name -->
+    <EditText
+        android:id="@+id/et_receiver_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:inputType="textPersonName" />
+
+    <!-- Receiver Email -->
+    <EditText
+        android:id="@+id/et_receiver_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Receiver Phone -->
+    <EditText
+        android:id="@+id/et_receiver_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:inputType="phone" />
+
+    <!-- Receiver Country -->
+    <EditText
+        android:id="@+id/et_receiver_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:inputType="text" />
+
+    <!-- Receiver Address -->
+    <EditText
+        android:id="@+id/et_receiver_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="text" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+</LinearLayout>

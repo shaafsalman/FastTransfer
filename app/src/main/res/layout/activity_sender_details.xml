@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Sender Full Name -->
+    <EditText
+        android:id="@+id/et_sender_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:inputType="textPersonName" />
+
+    <!-- Sender Email -->
+    <EditText
+        android:id="@+id/et_sender_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Sender Phone -->
+    <EditText
+        android:id="@+id/et_sender_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:inputType="phone" />
+
+    <!-- Sender Country -->
+    <EditText
+        android:id="@+id/et_sender_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:inputType="text" />
+
+    <!-- Sender Address -->
+    <EditText
+        android:id="@+id/et_sender_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="text" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next_sender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+</LinearLayout>
