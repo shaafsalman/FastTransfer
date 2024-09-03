@@ -4,6 +4,18 @@
     <!-- Splash Screen -->
     <string name="splash_logo_description">fastTransfer Logo</string>
 
+    <string name="hint_full_name">Full Name</string>
+    <string name="btn_next">Next</string>
+
+    <string name="label_name">Name:</string>
+    <string name="label_email">Email:</string>
+    <string name="label_phone">Phone:</string>
+    <string name="label_country">Country:</string>
+    <string name="label_address">Address:</string>
+    <string name="header_sender_details">Sender Details</string>
+
+
+
     <!-- Sender Information Form -->
     <string name="sender_info_title">Sender Information</string>
     <string name="hint_name">Enter Name</string>
@@ -14,7 +26,7 @@
     <string name="next">Next</string>
 
     <!-- Receiver Information Form -->
-    <string name="receiver_info_title">Receiver Information</string>
+    <string name="receiver_details">Receiver Information</string>
     <string name="hint_receiver_name">Enter Receiver Name</string>
     <string name="hint_receiver_address">Enter Address</string>
     <string name="hint_receiver_email">Enter Receiver Email</string>
@@ -34,9 +46,18 @@
     <string name="receiver_address">Receiver Address</string>
     <string name="edit">Edit</string>
 
+
+
+
     <!-- Common -->
     <string name="back">Back</string>
     <string name="submit">Submit</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sender_details">SENDER DETAILS</string>
+    <string name="email">Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="country">Country</string>
+    <string name="address">Address</string>
 
 </resources>

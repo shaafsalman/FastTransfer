@@ -1,50 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+
+    <dimen name="container_margin_top">20sp</dimen>
+
+    <dimen name="button_margin_top">12sp</dimen>
+    <dimen name="grid_gap">8sp</dimen>
 
 
-    <dimen name="header_text_size">24sp</dimen>
-    <dimen name="edittext_padding">12dp</dimen>
-    <dimen name="edittext_width_percent">0.8</dimen>
-    <dimen name="margin_top">16dp</dimen>
-    <dimen name="button_width_percent">0.5</dimen>
-    <dimen name="button_margin_top">24dp</dimen>
+    <dimen name="header_font">28sp</dimen>
 
-    <!-- Common Margins and Padding -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="edit_text_padding">12dp</dimen>
-    <dimen name="button_top_margin">24dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
 
-    <!-- Text Sizes -->
-    <dimen name="text_size_small">14sp</dimen>
-    <dimen name="text_size_medium">16sp</dimen>
-    <dimen name="text_size_large">18sp</dimen>
-    <dimen name="text_size_title">20sp</dimen>
-
-    <!-- Button Dimensions -->
-    <dimen name="button_height">48dp</dimen>
-    <dimen name="button_width">48dp</dimen>
-
-    <!-- EditText Dimensions -->
-    <dimen name="edit_text_height">48dp</dimen>
-    <dimen name="edit_text_margin_bottom">12dp</dimen>
-
-    <!-- Image and Icon Sizes -->
-    <dimen name="splash_image_size">120dp</dimen>
-    <dimen name="arrow_icon_size">32dp</dimen>
-
-    <!-- Layout Spacing -->
-    <dimen name="layout_margin_top">16dp</dimen>
-    <dimen name="layout_margin_bottom">16dp</dimen>
-    <dimen name="layout_margin_start">16dp</dimen>
-    <dimen name="layout_margin_end">16dp</dimen>
-    <dimen name="card_margin">8dp</dimen>
-
-    <!-- Floating Action Button (FAB) -->
-    <dimen name="fab_size">56dp</dimen>
-
-    <!-- Other dimensions -->
-    <dimen name="section_spacing">20dp</dimen>
-    <dimen name="divider_height">1dp</dimen>
 </resources>

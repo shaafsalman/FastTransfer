@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Header Text Style for Day Mode -->
+    <style name="HeaderTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimary</item> <!-- Light theme color for day mode -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/header_font</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <!-- Input Field Style for Day Mode -->
+    <style name="InputFieldStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_edittext_background</item> <!-- Default drawable for day mode -->
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">@android:color/black</item> <!-- Black text for day mode -->
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>
