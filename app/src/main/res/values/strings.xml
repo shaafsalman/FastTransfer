@@ -62,5 +62,6 @@
     <string name="review_information">Review Information</string>
     <string name="contact_info">Contact Info</string>
     <string name="name">Name</string>
+    <string name="todo">TODO</string>
 
 </resources>

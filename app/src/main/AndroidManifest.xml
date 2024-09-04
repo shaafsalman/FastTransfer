@@ -24,21 +24,18 @@
             </intent-filter>
         </activity>
 
-        <!-- Sender Details Activity -->
         <activity
             android:name=".Activity.SenderDetailsActivity"
             android:exported="true"
             android:theme="@style/Theme.FastTransfer">
         </activity>
 
-        <!-- Receiver Details Activity -->
         <activity
             android:name=".Activity.ReceiverDetailsActivity"
             android:exported="true"
             android:theme="@style/Theme.FastTransfer">
         </activity>
 
-        <!-- Reviewer Details Activity -->
         <activity
             android:name=".Activity.ReviewDetailsActivity"
             android:exported="true"

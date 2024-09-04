@@ -7,82 +7,72 @@
     android:background="@color/colorBackground">
 
     <!-- Header -->
-
     <TextView
-        android:id="@+id/tv_receiver_details_header"
-        style="@style/HeaderTextStyle"
+        android:id="@+id/tvReceiverHeader"
+        style="@style/HeaderStyle"
         android:text="@string/receiver_details"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
-    <!-- Receiver Email -->
-
+    <!-- Receiver Details -->
     <EditText
-        android:id="@+id/et_receiver_email"
+        android:id="@+id/etReceiverEmail"
         style="@style/InputFieldStyle"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@id/tv_receiver_details_header"
+        app:layout_constraintTop_toBottomOf="@id/tvReceiverHeader"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="@dimen/grid_gap" />
 
-    <!-- Receiver Full Name -->
     <EditText
-        android:id="@+id/et_receiver_full_name"
+        android:id="@+id/etReceiverName"
         style="@style/InputFieldStyle"
         android:hint="@string/full_name"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@id/et_receiver_email"
+        app:layout_constraintTop_toBottomOf="@id/etReceiverEmail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/grid_gap" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Receiver Contact -->
     <EditText
-        android:id="@+id/et_receiver_contact"
+        android:id="@+id/etReceiverContact"
         style="@style/InputFieldStyle"
         android:hint="@string/contact_information"
         android:inputType="phone"
-        app:layout_constraintTop_toBottomOf="@id/et_receiver_full_name"
+        app:layout_constraintTop_toBottomOf="@id/etReceiverName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/grid_gap" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Receiver Country -->
     <EditText
-        android:id="@+id/et_receiver_country"
+        android:id="@+id/etReceiverCountry"
         style="@style/InputFieldStyle"
         android:hint="@string/country"
         android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@id/et_receiver_contact"
+        app:layout_constraintTop_toBottomOf="@id/etReceiverContact"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/grid_gap" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Receiver Address -->
     <EditText
-        android:id="@+id/et_receiver_address"
+        android:id="@+id/etReceiverAddress"
         style="@style/InputFieldStyle"
         android:hint="@string/address"
         android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@id/et_receiver_country"
+        app:layout_constraintTop_toBottomOf="@id/etReceiverCountry"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/grid_gap" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Next Button -->
     <Button
-        android:id="@+id/btn_next_receiver"
+        android:id="@+id/btnNext"
         style="@style/ButtonStyle"
+        android:text="@string/next"
         android:layout_width="299dp"
         android:layout_height="51dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/next"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etReceiverAddress"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_receiver_address" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

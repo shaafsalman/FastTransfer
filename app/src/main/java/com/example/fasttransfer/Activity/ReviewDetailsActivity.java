@@ -1,13 +1,16 @@
 package com.example.fasttransfer.Activity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fasttransfer.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ReviewDetailsActivity extends AppCompatActivity {
     private static final String TAG = "ReviewDetailsActivity";
@@ -16,21 +19,26 @@ public class ReviewDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_review_details);
+        setContentView(R.layout.view_review_details);
+
+        FloatingActionButton fabBackToSender = findViewById(R.id.fabBackToSender);
+
+         fabBackToSender.setOnClickListener(v -> {
+            Intent indent = new Intent(ReviewDetailsActivity.this, SenderDetailsActivity.class);
+            startActivity(indent);
+        });
 
         // Initialize Sender views
-        TextView senderName = findViewById(R.id.et_sender_full_name);
-//        TextView senderEmail = findViewById(R.id.et_sender_email);
-        TextView senderPhone = findViewById(R.id.et_sender_contact);
-        TextView senderCountry = findViewById(R.id.et_sender_country);
-        TextView senderAddress = findViewById(R.id.et_sender_address);
+        TextView senderName = findViewById(R.id.tvSenderName);
+        TextView senderPhone = findViewById(R.id.tvSenderContact);
+        TextView senderCountry = findViewById(R.id.tvSenderCountry);
+        TextView senderAddress = findViewById(R.id.tvSenderAddress);
 
         // Initialize Receiver views
-        TextView receiverName = findViewById(R.id.et_receiver_full_name);
-//        TextView receiverEmail = findViewById(R.id.et_receiver_email);
-        TextView receiverPhone = findViewById(R.id.et_receiver_contact);
-        TextView receiverCountry = findViewById(R.id.et_receiver_country);
-        TextView receiverAddress = findViewById(R.id.et_receiver_address);
+        TextView receiverName = findViewById(R.id.tvReceiverName);
+        TextView receiverPhone = findViewById(R.id.tvReceiverContact);
+        TextView receiverCountry = findViewById(R.id.tvReceiverCountry);
+        TextView receiverAddress = findViewById(R.id.tvReceiverAddress);
 
         // Retrieve Sender details from the Intent
         String senderNameStr = getIntent().getStringExtra("sender_name");
@@ -57,16 +65,14 @@ public class ReviewDetailsActivity extends AppCompatActivity {
         Log.d(TAG, "Receiver Country: " + receiverCountryStr);
         Log.d(TAG, "Receiver Address: " + receiverAddressStr);
 
-        // Set Sender details
+        //Sender details
         senderName.setText(senderNameStr != null ? senderNameStr : "N/A");
-//        senderEmail.setText(senderEmailStr != null ? senderEmailStr : "N/A");
         senderPhone.setText(senderPhoneStr != null ? senderPhoneStr : "N/A");
         senderCountry.setText(senderCountryStr != null ? senderCountryStr : "N/A");
         senderAddress.setText(senderAddressStr != null ? senderAddressStr : "N/A");
 
-        // Set Receiver details
+        //Receiver details
         receiverName.setText(receiverNameStr != null ? receiverNameStr : "N/A");
-//        receiverEmail.setText(receiverEmailStr != null ? receiverEmailStr : "N/A");
         receiverPhone.setText(receiverPhoneStr != null ? receiverPhoneStr : "N/A");
         receiverCountry.setText(receiverCountryStr != null ? receiverCountryStr : "N/A");
         receiverAddress.setText(receiverAddressStr != null ? receiverAddressStr : "N/A");

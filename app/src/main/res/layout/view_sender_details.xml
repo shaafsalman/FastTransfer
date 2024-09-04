@@ -6,89 +6,81 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground">
 
-    <!-- Header-->
-
-
-    <!-- Sender Email -->
-
+    <!-- Header -->
     <TextView
-        android:id="@+id/tv_sender_details_header"
-        style="@style/HeaderTextStyle"
+        android:id="@+id/tvSenderHeader"
+        style="@style/HeaderStyle"
         android:text="@string/sender_details"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
+    <!-- Sender Email -->
     <EditText
-        android:id="@+id/et_sender_email"
+        android:id="@+id/etSenderEmail"
         style="@style/InputFieldStyle"
         android:autofillHints="ishaafsalman@gmail.com"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@id/tv_sender_details_header"
+        app:layout_constraintTop_toBottomOf="@id/tvSenderHeader"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/grid_gap" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Sender Full Name -->
     <EditText
-        android:id="@+id/et_sender_full_name"
+        android:id="@+id/etSenderName"
         style="@style/InputFieldStyle"
         android:hint="@string/full_name"
         android:autofillHints="Shaaf Salman"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@id/et_sender_email"
+        app:layout_constraintTop_toBottomOf="@id/etSenderEmail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/grid_gap" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Sender Contact -->
     <EditText
-        android:id="@+id/et_sender_contact"
+        android:id="@+id/etSenderContact"
         style="@style/InputFieldStyle"
         android:autofillHints="+92 3174532990"
         android:hint="@string/contact_information"
         android:inputType="phone"
-        app:layout_constraintTop_toBottomOf="@id/et_sender_full_name"
+        app:layout_constraintTop_toBottomOf="@id/etSenderName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/grid_gap" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Sender Country -->
     <EditText
-        android:id="@+id/et_sender_country"
+        android:id="@+id/etSenderCountry"
         style="@style/InputFieldStyle"
         android:hint="@string/country"
         android:autofillHints="Pakistan"
         android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@id/et_sender_contact"
+        app:layout_constraintTop_toBottomOf="@id/etSenderContact"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/grid_gap" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Sender Address -->
     <EditText
-        android:id="@+id/et_sender_address"
+        android:id="@+id/etSenderAddress"
         style="@style/InputFieldStyle"
-        android:layout_marginTop="@dimen/grid_gap"
         android:autofillHints="Model Town"
         android:hint="@string/address"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSenderCountry"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_sender_country" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Next Button -->
     <Button
-        android:id="@+id/btn_next_sender"
+        android:id="@+id/btnNext"
         style="@style/ButtonStyle"
         android:layout_width="299dp"
         android:layout_height="51dp"
-        android:layout_marginTop="20dp"
         android:text="@string/next"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSenderAddress"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_sender_address" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
