@@ -14,7 +14,7 @@
     <dimen name="header_font">28sp</dimen>
 
     <dimen name="review_margin">24dp</dimen>
-    <dimen name="column_width">80dp</dimen>
+    <dimen name="column_width">86dp</dimen>
     <dimen name="text_size">16sp</dimen>
     <dimen name="header_padding">16dp</dimen>
 
