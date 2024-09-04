@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Primary colors -->
-    <color name="colorPrimary">#780808</color>
+    <color name="colorPrimary">#D33333</color>
     <color name="colorSecondary">#4E5050</color>
 
     <!-- Background and text colors -->
